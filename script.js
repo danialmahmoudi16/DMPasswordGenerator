@@ -21,11 +21,18 @@ function generatePassword() {
     choosepasswordlength = prompt("How many characters would you like your password to contain? Choose a number between 8 to 128");
   }
 
-  choosenumbers = confirm("Click OK to include numerical characters in your password");
-  chooselowercase = confirm("Click OK to include lowercase characters in your password");
-  chooseuppercase = confirm("Click OK to include uppercase characters in your password");
-  choosespecialcharacter = confirm("Click OK to include special characters in your password");
+   choosenumbers = confirm("Click OK to include numerical characters in your password");
+   chooselowercase = confirm("Click OK to include lowercase characters in your password");
+   chooseuppercase = confirm("Click OK to include uppercase characters in your password");
+   choosespecialcharacter = confirm("Click OK to include special characters in your password");
 
+  while (choosenumbers == false && chooselowercase == false && chooseuppercase == false && choosespecialcharacter == false){
+    alert("You need to select at least one character type");
+   choosenumbers = confirm("Click OK to include numerical characters in your password");
+   chooselowercase = confirm("Click OK to include lowercase characters in your password");
+   chooseuppercase = confirm("Click OK to include uppercase characters in your password");
+   choosespecialcharacter = confirm("Click OK to include special characters in your password");
+  }
 
 
 

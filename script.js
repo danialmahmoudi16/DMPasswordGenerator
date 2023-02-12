@@ -5,7 +5,11 @@ var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "k", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var specialcharacter = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "~", "`", ",", "<", ".", ">", "/", "?", ":", ";", "'", "+", "-"];
 
-
+var choosepasswordlength;
+var choosenumbers;
+var chooselowercase;
+var chooseuppercase;
+var choosespecialcharacter;
 
 
 // Get references to the #generate element

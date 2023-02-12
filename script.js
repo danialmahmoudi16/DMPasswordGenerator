@@ -11,6 +11,48 @@ var chooselowercase;
 var chooseuppercase;
 var choosespecialcharacter;
 
+function generatePassword() {
+
+  choosepasswordlength = prompt("How many characters would you like your password to contain? Choose a number between 8 to 128");
+
+
+  while (choosepasswordlength <= 8 || choosepasswordlength >= 128){
+    alert("Password length needs to be between 8 to 128 characters. Please try again!");
+    choosepasswordlength = prompt("How many characters would you like your password to contain? Choose a number between 8 to 128");
+  }
+
+  choosenumbers = confirm("Click OK to include numerical characters in your password");
+  chooselowercase = confirm("Click OK to include lowercase characters in your password");
+  chooseuppercase = confirm("Click OK to include uppercase characters in your password");
+  choosespecialcharacter = confirm("Click OK to include special characters in your password");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");

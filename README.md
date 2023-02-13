@@ -22,3 +22,6 @@ Password Generator
 * Then a for loop is created to chronologically start the numbering from zero using the i = 0 wihtin the loop. Additionally the passwordlength being set to be more than zero and the i++ there to increment the varauble i by 1.
 
 * Finally the return command concludes the code to help bring in the generated password for the user.
+
+* Here is the link of the deployed application https://danialmahmoudi16.github.io/DMPasswordGenerator/
+

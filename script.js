@@ -15,7 +15,6 @@ function generatePassword() {
 
   choosepasswordlength = prompt("How many characters would you like your password to contain? Choose a number between 8 to 128");
 
-
   while (choosepasswordlength <= 8 || choosepasswordlength >= 128){
     alert("Password length needs to be between 8 to 128 characters. Please try again!");
     choosepasswordlength = prompt("How many characters would you like your password to contain? Choose a number between 8 to 128");
@@ -28,37 +27,42 @@ function generatePassword() {
 
   while (choosenumbers == false && chooselowercase == false && chooseuppercase == false && choosespecialcharacter == false){
     alert("You need to select at least one character type");
-   choosenumbers = confirm("Click OK to include numerical characters in your password");
-   chooselowercase = confirm("Click OK to include lowercase characters in your password");
-   chooseuppercase = confirm("Click OK to include uppercase characters in your password");
-   choosespecialcharacter = confirm("Click OK to include special characters in your password");
+     choosenumbers = confirm("Click OK to include numerical characters in your password");
+     chooselowercase = confirm("Click OK to include lowercase characters in your password");
+     chooseuppercase = confirm("Click OK to include uppercase characters in your password");
+     choosespecialcharacter = confirm("Click OK to include special characters in your password");
   }
 
+  var Selectedpreference = []
 
+    if (choosenumbers) {
+      Selectedpreference = Selectedpreference.concat(numbers)
+    }
 
+    if (chooselowercase) {
+      Selectedpreference = Selectedpreference.concat(lowercase)
+    }
 
+    if (chooseuppercase) {
+      Selectedpreference = Selectedpreference.concat(uppercase)
+    }
 
+    if (choosespecialcharacter) {
+      Selectedpreference = Selectedpreference.concat(specialcharacter)
+    }
 
+    console.log(Selectedpreference)
+    
+    var selectedpassword = ""
 
+    for (var i = 0; i < choosepasswordlength; i++) {
+      selectedpassword = selectedpassword + Selectedpreference[Math.floor(Math.random() * Selectedpreference.length)];
+      // console.log(selectedpassword)
+    }
 
-
-
-
-
+    return selectedpassword;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Get references to the #generate element

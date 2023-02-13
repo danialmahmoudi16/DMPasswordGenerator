@@ -15,3 +15,10 @@ Password Generator
 
 * Then likewise as before another loop is created through the "while command" to go against the user selecting cancel for all character types so that the pop up box and come back and say "you need select at least one character type".
 
+* An additional varibale needs to be created to help concatinate the arrays created in the beggining together in order to have the generated password to contain all four types of characters.
+
+* This is done through these lines of code ![image](https://user-images.githubusercontent.com/122760940/218353339-8a5405fa-b724-4785-96d7-815d31050fdb.png)
+
+* Then a for loop is created to chronologically start the numbering from zero using the i = 0 wihtin the loop. Additionally the passwordlength being set to be more than zero and the i++ there to increment the varauble i by 1.
+
+* Finally the return command concludes the code to help bring in the generated password for the user.
